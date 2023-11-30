@@ -6,12 +6,12 @@ const commentData = [{
         post_id: 1
     },
     {
-        comment_text: "consectetur adipiscing elit",
+        comment_text: "Lorem ipsum dolor sit amet2",
         user_id: 2,
         post_id: 2
     },
     {
-        comment_text: "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        comment_text: "Lorem ipsum dolor sit amet3",
         user_id: 3,
         post_id: 3
     }
