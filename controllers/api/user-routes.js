@@ -59,7 +59,6 @@ router.post('/', (req, res) => {
 
     User.create({
         username: req.body.username,
-        email: req.body.email,
         password: req.body.password
     })
 
@@ -128,7 +127,7 @@ router.put('/:id', (req, res) => {
             }
         })
         .then(dbUserData => {
-            if (!dbUserData) {
+            if (!dbUserData[0]) {
                 res.status(404).json({ message: 'No user found with this id' });
                 return;
             }
